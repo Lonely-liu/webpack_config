@@ -1,7 +1,6 @@
-import '../common/a';
+import '../common/a'
 
-import '../../css/about.scss';
-
+import '../../css/about.scss'
 
 class Person {
   constructor() {
@@ -13,9 +12,6 @@ class Person {
     console.log(this.name)
   }
 }
-
-
-
 
 window.onload = function () {
   let btn = document.getElementById('btn')
@@ -30,8 +26,6 @@ window.onload = function () {
   }
 
   clickHandler()
-
 }
-
 
 console.log('this is about page')
