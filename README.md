@@ -1,7 +1,7 @@
 # new_webpack_config
 
 #### 介绍
-webpack4 最新版本打包配置方式
+webpack4 最新版本打包配置方式 主要用于项目打包、压缩html、css、js文件，优化静态图片 支持多页打包，采用Eslint做代码风格检查
 
 #### 软件架构
 软件架构说明
@@ -9,9 +9,11 @@ webpack4 最新版本打包配置方式
 
 #### 安装教程
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. npm install # 安装依赖
+2. npm build # 打包应用生成dist目录
+3. npm run server # 通过webpack启动服务并开启热刷新
+4. npm run lint # 检查src目录下文件代码风格是否符合规范
+5. npm run lint-fix # 自动检查并矫正代码风格
 
 #### 使用说明
 

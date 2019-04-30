@@ -1,6 +1,6 @@
 /**
  * @description Eslint 配置文件
- * @author Lonely
+ * @author Lonely_liu
  * @createTime 2019/4/30
  */
 
