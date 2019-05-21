@@ -42,6 +42,18 @@ module.exports = {
         use: ['babel-loader'],
         exclude: /node_modules/
       },
+      
+      //暴露$和jQuery到windows全局
+      {
+        test: require.resolve('jquery'),
+        use: [{
+          loader: 'expose-loader',
+          options: 'jQuery'
+        }, {
+          loader: 'expose-loader',
+          options: '$'
+        }]
+      },
       {
         test: /\.(vue|js)/,
         use: ['eslint-loader'],

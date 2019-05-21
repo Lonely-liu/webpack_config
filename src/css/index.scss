@@ -1,13 +1,12 @@
-
-
 .flex {
   display: flex;
+
   h1 {
     color: orange;
     position: relative;
     top: 0;
   }
-  
+
   .bg-img {
     width: 200px;
     height: 200px;
@@ -20,8 +19,59 @@
     opacity: 0;
     transform: translateY(100%)
   }
+
   100% {
     opacity: 1;
     transform: translateY(0)
   }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.list-wrap {}
+
+.list-wrap .item {
+  width: 100%;
+  height: 80px;
+  background-color: skyblue;
+}
+
+.list-wrap .item:nth-of-type(2n) {
+  background-color: orange;
+}
+
+
+.gift-container ul {
+  overflow: hidden;
+}
+
+.gift-container ul li {
+  float: left;
+}
+
+.gift-container ul li section {
+  width: 100px;
+  margin: 5px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: skyblue;
+}
+
+.gift-container ul li section.active {
+  background-color: orange;
 }

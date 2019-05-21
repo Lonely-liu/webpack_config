@@ -4,15 +4,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.js"></script> -->
   <title>首页</title>
 </head>
 
 <body>
   <div id="app" class="flex">
     <h1 class="h1">{{title}}</h1>
-    <div @click="clickHandler" class="bg-img"></div>
+    <!-- <div @click="clickHandler" class="bg-img"></div> -->
     <img src="../img/1.gif" alt="">
+  </div>
+
+  <div class="gift-container">
+    <ul>
+      <li>
+        <section class="gift-box active" data-role="0">0</section>
+        <section class="gift-box" data-role="1">1</section>
+        <section class="gift-box" data-role="2">2</section>
+      </li>
+      <li>
+        <section class="gift-box" data-role="7">7</section>
+        <section class="gift-box get-gift-btn">抽奖</section>
+        <section class="gift-box" data-role="3">3</section>
+      </li>
+      <li>
+        <section class="gift-box" data-role="6">6</section>
+        <section class="gift-box" data-role="5">5</section>
+        <section class="gift-box" data-role="4">4</section>
+      </li>
+    </ul>
+    <div>
+      <label for="gift-num">
+        <span>抽奖数字<small>0-7</small>:</span>
+        <input type="text" id="gift-num" name="gift-name">
+      </label>
+    </div>
   </div>
   <!-- <script src="dist/main.bundle.js"></script> -->
   <!-- <script src="../js/default/entry.index.js"></script> -->
